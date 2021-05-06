@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "382fa9f6-dd04-4b70-8840-d4fa6a629bd2",
+		"name": "SDET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Board",
+			"item": [
+				{
+					"name": "Create a Board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&name=SDET_Board",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								},
+								{
+									"key": "name",
+									"value": "SDET_Board"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/DWFc51Io?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"DWFc51Io"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a To Do List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&name=To Do&idBoard=609367123e9cd6558cdb256a",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								},
+								{
+									"key": "name",
+									"value": "To Do"
+								},
+								{
+									"key": "idBoard",
+									"value": "609367123e9cd6558cdb256a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update the name of a List",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/609377700884634fc5f01a32/name?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&value=Done",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"609377700884634fc5f01a32",
+								"name"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								},
+								{
+									"key": "value",
+									"value": "Done"
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a New Card",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&idList=609377700884634fc5f01a32&name=MyFirstCard",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								},
+								{
+									"key": "idList",
+									"value": "609377700884634fc5f01a32"
+								},
+								{
+									"key": "name",
+									"value": "MyFirstCard"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lists on a Board",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/DWFc51Io/lists?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"DWFc51Io",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "1bf5a769f376accc1d1e826c01cd8835"
+								},
+								{
+									"key": "token",
+									"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update a Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/jJefhRMZ?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&idList =609367123e9cd6558cdb256d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"jJefhRMZ"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1bf5a769f376accc1d1e826c01cd8835"
+						},
+						{
+							"key": "token",
+							"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+						},
+						{
+							"key": "idList ",
+							"value": "609367123e9cd6558cdb256d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cards in a List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists/609377700884634fc5f01a32/cards?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists",
+						"609377700884634fc5f01a32",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1bf5a769f376accc1d1e826c01cd8835"
+						},
+						{
+							"key": "token",
+							"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Move a Card",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/609378dcaf6b3329a3e73507?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&idList =609367123e9cd6558cdb256c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"609378dcaf6b3329a3e73507"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1bf5a769f376accc1d1e826c01cd8835"
+						},
+						{
+							"key": "token",
+							"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+						},
+						{
+							"key": "idList ",
+							"value": "609367123e9cd6558cdb256c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove a Board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/DWFc51Io?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"DWFc51Io"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1bf5a769f376accc1d1e826c01cd8835"
+						},
+						{
+							"key": "token",
+							"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
