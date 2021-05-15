@@ -234,7 +234,7 @@
 		{
 			"name": "Update a Card",
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"url": {
 					"raw": "https://api.trello.com/1/cards/jJefhRMZ?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e&idList =609367123e9cd6558cdb256d",
@@ -342,7 +342,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/boards/DWFc51Io?key=1bf5a769f376accc1d1e826c01cd8835&token=09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e",
+					"raw": "https://api.trello.com/1/boards/DWFc51Io?key={{API_KEY}}&token={{API_TOKEN}}",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -357,16 +357,26 @@
 					"query": [
 						{
 							"key": "key",
-							"value": "1bf5a769f376accc1d1e826c01cd8835"
+							"value": "{{API_KEY}}"
 						},
 						{
 							"key": "token",
-							"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
+							"value": "{{API_TOKEN}}"
 						}
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "API_KEY",
+			"value": "1bf5a769f376accc1d1e826c01cd8835"
+		},
+		{
+			"key": "API_TOKEN",
+			"value": "09352cbb061f68470913e64811e2f2f3158c3663a867433e0f33f0f358c46c6e"
 		}
 	]
 }
